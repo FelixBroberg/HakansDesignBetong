@@ -1,4 +1,4 @@
-// To add an image: drop the file in images/galleri/ and add an entry to the array below.
+// To add an image: drop the file in Images/galleri/ and add an entry to the array below.
 // To add a category: add a new object here AND a matching <section id="..."> in gallery.html.
 const GALLERY_CONFIG = [
     {
@@ -85,7 +85,7 @@ function initializeGallery() {
         if (!section) return;
         const grid = section.querySelector('.masonry-grid');
         category.images.forEach(({ file, alt }) => {
-            grid.appendChild(createGalleryItem(`images/galleri/${file}`, alt));
+            grid.appendChild(createGalleryItem(`Images/galleri/${file}`, alt));
         });
     });
 
